@@ -1,47 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-      />
-    <title>My Profile</title>
-  </head>
-  <body>
-    <div class="container animate__animated animate__zoomIn">
-      <!-- profile picture -->
-      <div class="profile">
-        <img src="fix.jpg" alt="error image" class="animate__animated
-          animate__pulse animate__infinite" />
-        <p class="animate__animated animate__fadeInDownBig">Respati Hadinata</p>
-      </div>
-
-      <!-- link tree button -->
-      <div class="link">
-        <a href="https://instagram.com/respati.hn" target="_blank"
-          class="animate__animated animate__bounceInLeft">instagram</a>
-        <a href="https://wa.me/6282278859597" target="_blank" class="animate__animated
-          animate__bounceInLeft animate__delay-1s">Whatsapp</a>
-        <a href="http://line.me/ti/p/~respati_hadinata" target="_blank" class="animate__animated
-          animate__bounceInLeft animate__delay-2s">Line</a>
-        <a href="https://youtube.com/deaafrizal" target="_blank"
-          class="animate__animated animate__bounceInLeft animate__delay-3s">youtube</a>
-      </div>
-
-      <!-- footer -->
-      <div class="footer animate__animated animate__bounceInUp
-        animate__delay-4s">
-        <i>Dosen Pembimbing :AGUS FATULLOH,S.T., M.T</i>
-      </div>
-    </div>
-  </body>
-</html>
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-family: 'Bebas neue', cursive;
+  }
+  
+  .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: red;
+    height: 100vh;
+    background-image: url("Background.jpg");
+    background-position: center;
+    background-size: 30%;
+    background-attachment: fixed;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .profile>img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #222;
+    border-radius: 100%;
+  }
+  
+  .profile>p {
+    font-size: 1.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: burlywood;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .link>a {
+    text-decoration: none;
+    color: burlywood;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid #222;
+    background-color: rgb(58, 43, 226);
+    border-radius: 7px;
+    margin: 5px 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .link>a:hover {
+    background-color: azure;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
+  .footer>i {
+    color: burlywood;
+    font-size: 25px;
+  }
