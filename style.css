@@ -4,17 +4,17 @@
   }
   
   html {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas neue', cursive;
   }
   
   .container {
-    max-width: 500px;
+    max-width: 1600px;
     margin: 0 auto;
     background: red;
     height: 100vh;
     background-image: url("Background.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 30%;
     background-attachment: fixed;
   }
   
@@ -27,8 +27,8 @@
   }
   
   .profile>img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 3px solid #222;
     border-radius: 100%;
   }
@@ -55,7 +55,7 @@
     font-size: 24px;
     text-align: center;
     border: 3px solid #222;
-    background-color: blueviolet;
+    background-color: rgb(58, 43, 226);
     border-radius: 7px;
     margin: 5px 10px;
     padding: 10px;
